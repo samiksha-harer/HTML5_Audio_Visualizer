@@ -1,21 +1,86 @@
-html, body {
-    margin: 0;
-    font-family: arial, "Microsoft YaHei";
-    background-color: #272822;
-    color: #FEFEFE;
-}
-#fileWrapper{
-	transition:all 0.5s ease;
-}
-#fileWrapper:hover{
-	opacity: 1!important;
+/* General Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-#visualizer_wrapper{
+body {
+	font-family: Arial, sans-serif;
+	background-color: #121212; /* Dark background */
+	color: #ffffff; /* Light text color */
+	line-height: 1.6;
+}
+
+#wrapper {
+	max-width: 900px;
+	margin: 20px auto;
+	padding: 20px;
+	background: #1e1e1e; /* Darker wrapper background */
+	border-radius: 8px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+.file_wrapper {
+	margin-bottom: 20px;
+}
+
+#info {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 10px;
 	text-align: center;
 }
-footer{
-	position: fixed;
-	bottom: 2px;
-	color:#aaa;
+
+label {
+	display: block;
+	margin-bottom: 10px;
+	font-size: 16px;
+	text-align: center;
+}
+
+input[type="file"] {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	margin: 0 auto;
+	border: 2px solid #007bff; /* Light blue border */
+	border-radius: 5px;
+	background-color: #2a2a2a; /* Dark input background */
+	color: #ffffff; /* Light text for input */
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+input[type="file"]:hover {
+	background-color: #007bff; /* Light blue on hover */
+	color: #fff; /* Keep text white on hover */
+}
+
+#visualizer_wrapper {
+	text-align: center;
+}
+
+canvas {
+	border: 1px solid #007bff; /* Light blue border for canvas */
+	border-radius: 5px;
+	background-color: #2a2a2a; /* Dark background for canvas */
+}
+
+footer {
+	text-align: center;
+	margin-top: 20px;
+}
+
+footer small {
+	font-size: 14px;
+}
+
+footer a {
+	color: #007bff; /* Light blue links */
+	text-decoration: none;
+}
+
+footer a:hover {
+	text-decoration: underline; /* Underline on hover */
 }
